@@ -58,6 +58,12 @@
     <Compile Include="FormNotaEntrada.Designer.cs">
       <DependentUpon>FormNotaEntrada.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduto.Designer.cs">
+      <DependentUpon>FormProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNotaEntrada.resx">
       <DependentUpon>FormNotaEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduto.resx">
+      <DependentUpon>FormProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaPrincipal.resx">
       <DependentUpon>JanelaPrincipal.cs</DependentUpon>

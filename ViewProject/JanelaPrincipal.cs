@@ -13,10 +13,15 @@ namespace ViewProject
 {
     public partial class FormJanelaPrincipal : Form
     {
-        private     FornecedorCotroller fornecedorCotroller = new FornecedorCotroller();
+        private  FornecedorCotroller fornecedorCotroller = new FornecedorCotroller();
+        private NotaEntradaController controller;
+        
+        private ProdutoController ProdutoController;
         public FormJanelaPrincipal()
         {
+
             InitializeComponent();
+
         }
 
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -28,10 +33,16 @@ namespace ViewProject
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new FormProduto().ShowDialog();
         }
 
         private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            new FormNotaEntrada(controller,fornecedorCotroller,ProdutoController).ShowDialog();
+        }
+
+        private void FormJanelaPrincipal_Load(object sender, EventArgs e)
         {
 
         }

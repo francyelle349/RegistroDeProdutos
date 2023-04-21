@@ -16,6 +16,7 @@ namespace ViewProject
     {
         private FornecedorCotroller controller;
 
+
         public FormFornecedor(FornecedorCotroller controller)
         {
             
